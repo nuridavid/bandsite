@@ -11,8 +11,6 @@
   position: fixed;
   top: 0%;
   left: 0%;
-  padding: 0%;
-  padding-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,8 +28,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 23px;
-  padding-top: 1rem;
+  padding-bottom: 7px;
 }
 
 body {
@@ -81,8 +78,7 @@ a {
   background-image: url("/sprint-one/assets/music-background.jpg");
   background-size: cover;
   height: 183px;
-  margin-top: 87px;
-  margin: 87px 0 0 0;
+  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,13 +96,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .about {
   background-color: white;
-  height: 400vh;
+  margin-bottom: 2.5rem;
   padding: 0 1rem;
+  color: #323232;
 }
 
 .about-header {
@@ -117,5 +114,41 @@ a {
 .about-img {
   background-size: cover;
   width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+figure {
+  width: 100%;
+  color: #323232;
+  margin-bottom: 2.5rem;
+}
+
+.quote {
+  margin-bottom: 2rem;
+}
+
+.paragraph-header {
+  margin-bottom: 1.5rem;
+}
+
+.picture__layout-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 1rem 0 1rem;
+  background-color: lightgray;
+  height: 100vh;
+}
+
+.gallery-heading {
+  margin: 2rem 0 1.5rem 0;
+}
+
+img {
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=main.css.map */
