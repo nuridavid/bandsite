@@ -16,6 +16,9 @@
     display: flex;
     padding-bottom: 7px;
   }
+  @include tablet {
+    // insert content
+  }
 }
 
 body {

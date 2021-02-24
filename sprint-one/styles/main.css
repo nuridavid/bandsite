@@ -82,6 +82,8 @@ footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 2.5rem 4rem 1.5rem 0.9rem;
 }
 
@@ -94,8 +96,13 @@ footer {
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.separation {
+  padding: 1rem 0;
 }
 
 * {

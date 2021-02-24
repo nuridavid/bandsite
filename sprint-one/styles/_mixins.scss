@@ -1,0 +1,8 @@
+@mixin footer-seperation {
+  margin-bottom: 1rem;
+}
+@mixin tablet {
+  @media (min-width: 720px) and (max-width: 1080px) {
+    @content;
+  }
+}

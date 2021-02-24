@@ -2,14 +2,15 @@
 @import "nav-bar";
 @import "footer";
 
+// @font-face{
+//   font-family: "Avenir next";
+//   src: url();
+// }
 @mixin tablet {
   @media screen and (max-width: 760px) {
     @content;
   }
 }
-// @font-face {
-//   font-family: ;
-// }
 
 * {
   margin: 0;
