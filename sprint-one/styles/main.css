@@ -1,16 +1,11 @@
-* {
-  margin: 0;
-  padding: 0%;
-}
-
 .top-nav__bar {
   background-color: #323232;
   color: white;
   width: 100%;
-  height: 80px;
   position: fixed;
   top: 0%;
   left: 0%;
+  padding-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,6 +67,40 @@ a {
   text-decoration: none;
   list-style-type: none;
   color: white;
+}
+
+footer {
+  background-color: #323232;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 2.5rem 4rem 1.5rem 0.9rem;
+}
+
+.bottom-header {
+  margin-bottom: 1rem;
+}
+
+.icon-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+* {
+  margin: 0;
+  padding: 0%;
 }
 
 .background-img {
@@ -141,7 +170,6 @@ figure {
           flex-direction: column;
   padding: 0 1rem 0 1rem;
   background-color: lightgray;
-  height: 100vh;
 }
 
 .gallery-heading {
@@ -149,6 +177,6 @@ figure {
 }
 
 img {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
