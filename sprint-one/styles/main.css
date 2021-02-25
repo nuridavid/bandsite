@@ -19,22 +19,24 @@
   z-index: 1;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .top-nav__bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 80px;
+  }
+}
+
 .top-nav__bar-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 7px;
-}
-
-body {
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .top-bar__item-container {
@@ -87,6 +89,72 @@ footer {
   padding: 2.5rem 4rem 1.5rem 0.9rem;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  footer {
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .logo-appear {
+    background-image: url("/sprint-one/assets/Logo/Logo-bandsite.png");
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 120px;
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .text-section__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.footer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .footer-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .top-bottom-section {
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .bottom-header {
   margin-bottom: 1rem;
 }
@@ -96,13 +164,22 @@ footer {
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .icon-section {
+    width: 30%;
+  }
 }
 
 .separation {
   padding: 1rem 0;
+}
+
+.copyright {
+  margin: 1rem 0;
 }
 
 * {
@@ -110,8 +187,19 @@ footer {
   padding: 0%;
 }
 
+body {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .background-img {
-  background-image: url("/sprint-one/assets/music-background.jpg");
+  background-image: url("/sprint-one/assets/zachary-smith-zorgErvL_Fs-unsplash.jpg");
   background-size: cover;
   height: 183px;
   margin-top: 80px;

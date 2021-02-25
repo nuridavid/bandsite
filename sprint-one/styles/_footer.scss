@@ -6,21 +6,67 @@ footer {
   align-items: flex-start;
   justify-content: space-around;
   padding: 2.5rem 4rem 1.5rem 0.9rem;
+
+  @include tablet {
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  }
+}
+.logo-appear {
+  @include tablet {
+    background-image: url("/sprint-one/assets/Logo/Logo-bandsite.png");
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 120px;
+    margin-left: 1rem;
+  }
+}
+.text-section__footer {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+// three individual column sections
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include tablet {
+    display: flex;
+  }
+}
+.top-bottom-section {
+  @include tablet {
+    margin-bottom: 1rem;
+    display: flex;
+    width: 100%;
+
+    justify-content: space-between;
+  }
 }
 
+// header on top of footer section
 .bottom-header {
   margin-bottom: 1rem;
 }
 
+// horizontal box with icons inside
 .icon-section {
   display: flex;
   width: 50%;
-  justify-content: space-between;
+  justify-content: space-around;
+  @include tablet {
+    width: 30%;
+  }
 }
-
+// space in between elements in footer
 .separation {
   padding: 1rem 0;
 }
-
-.footer-header {
+// copyright at the bottom of footer
+.copyright {
+  margin: 1rem 0;
 }

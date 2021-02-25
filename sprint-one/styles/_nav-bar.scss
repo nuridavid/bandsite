@@ -1,8 +1,8 @@
+//  nav bar
 .top-nav__bar {
   background-color: #323232;
   color: white;
   width: 100%;
-
   position: fixed;
   top: 0%;
   left: 0%;
@@ -12,45 +12,45 @@
   align-items: center;
   z-index: 1;
 
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+  }
+
   &-item {
     display: flex;
     padding-bottom: 7px;
   }
-  @include tablet {
-    // insert content
-  }
 }
 
-body {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-}
-
+// holds all three separate items in the nav bar (header-box, bio-box, and show-box)
 .top-bar__item-container {
   display: flex;
   width: 100%;
   padding: 0%;
 }
 
+// applied to whichever page is active
 .underlined {
   border-bottom: 4px white solid;
 }
-
+// box with logo inside
 .header-box {
   display: flex;
   justify-content: center;
 }
-
+// box with biography section item inside
 .bio-box {
   @extend .header-box;
   width: 50%;
   bottom: 0%;
 }
+// box with shows section item inside
 .show-box {
   @extend .bio-box;
 }
-
+// link selector
 a {
   text-decoration: none;
   list-style-type: none;

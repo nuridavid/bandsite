@@ -1,35 +1,38 @@
+// partial call section
 @import "mixins";
 @import "nav-bar";
 @import "footer";
+@import "fonts";
 
-// @font-face{
-//   font-family: "Avenir next";
-//   src: url();
-// }
 @mixin tablet {
   @media screen and (max-width: 760px) {
     @content;
   }
 }
-
+// universal selectors
 * {
   margin: 0;
   padding: 0%;
 }
+// body selector
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
 
+// image right under nav-bar
 .background-img {
-  background-image: url("/sprint-one/assets/music-background.jpg");
+  background-image: url("/sprint-one/assets/zachary-smith-zorgErvL_Fs-unsplash.jpg");
   background-size: cover;
-
   height: 183px;
   margin-top: 80px;
-
   display: flex;
   align-items: center;
-
   padding-left: 1rem;
 }
 
+// text box inside header image
 .title-box {
   height: 100%;
   display: flex;
@@ -37,6 +40,7 @@
   max-width: 60%;
 }
 
+// whole middle section
 .about {
   background-color: white;
   margin-bottom: 2.5rem;
@@ -48,37 +52,42 @@
   }
 }
 
+// image at top of about section
 .about-img {
   background-size: cover;
   width: 100%;
   margin-bottom: 1.5rem;
 }
 
+// whole text/article section
 figure {
   width: 100%;
   color: #323232;
   margin-bottom: 2.5rem;
 }
 
+// quote at top of about section
 .quote {
   margin-bottom: 2rem;
 }
 
+// article h1
 .paragraph-header {
   margin-bottom: 1.5rem;
 }
 
+// grid of pictures
 .picture__layout-section {
   display: flex;
   flex-direction: column;
   padding: 0 1rem 0 1rem;
   background-color: lightgray;
 }
-
+//  heading on top of gallery
 .gallery-heading {
   margin: 2rem 0 1.5rem 0;
 }
-
+// each image without a class- only the grid pictures
 img {
   margin-bottom: 1rem;
 }
