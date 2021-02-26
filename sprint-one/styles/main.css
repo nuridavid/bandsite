@@ -6,7 +6,6 @@
   top: 0%;
   left: 0%;
   height: 80px;
-  padding-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,6 +46,10 @@
   }
 }
 
+.top-nav__bar-heading {
+  padding-top: 1rem;
+}
+
 .top-bar__item-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,7 +80,7 @@
 .bio-box, .show-box {
   width: 50%;
   bottom: 0%;
-  padding-top: 27px;
+  padding-top: 11px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
@@ -260,7 +263,7 @@ body {
 }
 
 .about-header {
-  margin: 2rem 1rem 1.5rem 1rem;
+  margin: 2rem 1rem 1.5rem 0;
   color: #323232;
 }
 
