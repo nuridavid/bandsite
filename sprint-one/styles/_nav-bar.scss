@@ -70,7 +70,7 @@
     margin: 0 1.5rem;
   }
   @include desktop {
-    margin: 0 1.5rem;
+    margin-left: 11.25rem;
   }
 }
 // box with biography section item inside
@@ -84,7 +84,7 @@
     padding-top: 2rem;
   }
   @include desktop {
-    width: 12%;
+    width: 10%;
     padding-top: 2rem;
   }
 }

@@ -113,7 +113,7 @@
 
 @media only screen and (min-width: 1440px) {
   .header-box, .bio-box, .show-box {
-    margin: 0 1.5rem;
+    margin-left: 11.25rem;
   }
 }
 
@@ -132,7 +132,7 @@
 
 @media only screen and (min-width: 1440px) {
   .bio-box, .show-box {
-    width: 12%;
+    width: 10%;
     padding-top: 2rem;
   }
 }
@@ -167,6 +167,12 @@ footer {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  footer {
+    padding: 3rem 11.25rem;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .logo-appear {
     background-image: url("/sprint-one/assets/Logo/Logo-bandsite.png");
@@ -174,6 +180,18 @@ footer {
     height: 30px;
     width: 120px;
     margin-left: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .logo-appear {
+    background-image: url("/sprint-one/assets/Logo/Logo-bandsite.png");
+    background-repeat: no-repeat;
+    height: 1.5rem;
+    width: 7.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -195,9 +213,17 @@ footer {
 
 @media only screen and (min-width: 1440px) {
   .text-section__footer {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 70%;
   }
 }
 
@@ -222,6 +248,14 @@ footer {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .footer-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .top-bottom-section {
     margin-bottom: 1rem;
@@ -232,6 +266,28 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .top-bottom-section {
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 41%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-logo-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: flex-end;
   }
 }
 
@@ -250,7 +306,18 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .icon-section {
-    width: 20%;
+    width: 10rem;
+    height: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .icon-section {
+    width: 10rem;
+    height: 2rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -258,8 +325,32 @@ footer {
   padding: 1rem 0;
 }
 
+@media only screen and (min-width: 1440px) {
+  .separation {
+    padding: 20px 0;
+  }
+}
+
 .copyright {
   margin: 1rem 0;
+}
+
+@media only screen and (min-width: 1440px) {
+  .copyright {
+    margin-top: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .top-footer-section-connection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
 }
 
 * {
@@ -423,15 +514,17 @@ figure {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-bottom: 2rem;
   }
 }
 
 .gallery-section {
   background-color: lightgray;
+}
+
+@media only screen and (min-width: 1440px) {
+  .gallery-section {
+    padding: 0 11.25rem 2.5rem 11.25rem;
+  }
 }
 
 .gallery-heading {
@@ -446,7 +539,7 @@ figure {
 
 @media only screen and (min-width: 1440px) {
   .gallery-heading {
-    padding-left: 1.5rem;
+    padding: 3rem 0 4rem 0;
   }
 }
 
@@ -464,9 +557,9 @@ figure {
 
 @media only screen and (min-width: 1440px) {
   .img-gallery {
-    height: 126px;
-    width: 224px;
-    margin: 10px;
+    height: 193px;
+    width: 344px;
+    margin: 0 1.5rem 1.5rem 0;
   }
 }
 

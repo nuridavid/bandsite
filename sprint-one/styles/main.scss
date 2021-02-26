@@ -119,12 +119,13 @@ figure {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
-    justify-content: center;
-    padding-bottom: 2rem;
   }
 }
 .gallery-section {
   background-color: lightgray;
+  @include desktop {
+    padding: 0 11.25rem 2.5rem 11.25rem;
+  }
 }
 //  heading on top of gallery
 .gallery-heading {
@@ -134,7 +135,7 @@ figure {
     padding-left: 1.5rem;
   }
   @include desktop {
-    padding-left: 1.5rem;
+    padding: 3rem 0 4rem 0;
   }
 }
 // each image without a class- only the grid pictures
@@ -147,9 +148,9 @@ figure {
     margin: 10px;
   }
   @include desktop {
-    height: 126px;
-    width: 224px;
-    margin: 10px;
+    height: 193px;
+    width: 344px;
+    margin: 0 1.5rem 1.5rem 0;
   }
 }
 
