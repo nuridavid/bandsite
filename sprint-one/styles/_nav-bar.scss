@@ -23,6 +23,9 @@
   &-item {
     display: flex;
     padding-bottom: 12px;
+    @include tablet {
+      padding-bottom: 1.6rem;
+    }
   }
 }
 
@@ -41,6 +44,10 @@
 .header-box {
   display: flex;
   justify-content: center;
+
+  @include tablet {
+    margin: 0 1.5rem;
+  }
 }
 // box with biography section item inside
 .bio-box {
@@ -48,6 +55,10 @@
   width: 50%;
   bottom: 0%;
   padding-top: 27px;
+  @include tablet {
+    width: 12%;
+    padding-top: 2rem;
+  }
 }
 // box with shows section item inside
 .show-box {
