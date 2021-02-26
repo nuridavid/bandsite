@@ -30,6 +30,11 @@
 }
 .top-nav__bar-heading {
   padding-top: 1rem;
+
+  @include tablet {
+    padding: 0;
+    margin-right: 1rem;
+  }
 }
 
 // holds all three separate items in the nav bar (header-box, bio-box, and show-box)
