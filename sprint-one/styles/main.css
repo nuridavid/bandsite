@@ -5,6 +5,7 @@
   position: fixed;
   top: 0%;
   left: 0%;
+  height: 80px;
   padding-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,6 +30,7 @@
         -ms-flex-direction: row;
             flex-direction: row;
     height: 80px;
+    padding-top: 0;
   }
 }
 
@@ -36,7 +38,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 7px;
+  padding-bottom: 12px;
 }
 
 .top-bar__item-container {
@@ -63,6 +65,7 @@
 .bio-box, .show-box {
   width: 50%;
   bottom: 0%;
+  padding-top: 27px;
 }
 
 a {
@@ -170,7 +173,7 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
   .icon-section {
-    width: 30%;
+    width: 20%;
   }
 }
 
@@ -212,6 +215,13 @@ body {
   padding-left: 1rem;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .background-img {
+    height: 400px;
+    padding-left: 1.5rem;
+  }
+}
+
 .title-box {
   height: 100%;
   display: -webkit-box;
@@ -235,10 +245,24 @@ body {
   color: #323232;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .about {
+    padding: 0 1.5rem;
+  }
+}
+
 .about-img {
+  background-image: url("/sprint-one/assets/sam-moqadam-9sfPj0QzOEU-unsplash.jpg");
   background-size: cover;
   width: 100%;
+  height: 10rem;
   margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .about-img {
+    height: 362px;
+  }
 }
 
 figure {
@@ -263,15 +287,64 @@ figure {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 1rem 0 1rem;
+  background-color: lightgray;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .picture__layout-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 2rem;
+  }
+}
+
+.gallery-section {
   background-color: lightgray;
 }
 
 .gallery-heading {
-  margin: 2rem 0 1.5rem 0;
+  padding: 2rem 0 1.5rem 1rem;
 }
 
-img {
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .gallery-heading {
+    padding-left: 1.5rem;
+  }
+}
+
+.img-gallery {
   margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .img-gallery {
+    height: 126px;
+    width: 224px;
+    margin: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .article-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.paragraph {
+  padding-left: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
