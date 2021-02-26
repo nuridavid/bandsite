@@ -30,6 +30,10 @@ body {
     height: 400px;
     padding-left: 1.5rem;
   }
+  @include desktop {
+    height: 670px;
+    padding-left: 180px;
+  }
 }
 
 // text box inside header image
@@ -54,6 +58,12 @@ body {
   @include tablet {
     padding: 0 1.5rem;
   }
+  @include desktop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 17rem;
+  }
 }
 
 // image at top of about section
@@ -66,6 +76,10 @@ body {
 
   @include tablet {
     height: 362px;
+  }
+  @include desktop {
+    height: 450px;
+    width: 896px;
   }
 }
 
@@ -101,6 +115,13 @@ figure {
     justify-content: center;
     padding-bottom: 2rem;
   }
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
 }
 .gallery-section {
   background-color: lightgray;
@@ -110,6 +131,9 @@ figure {
   padding: 2rem 0 1.5rem 1rem;
 
   @include tablet {
+    padding-left: 1.5rem;
+  }
+  @include desktop {
     padding-left: 1.5rem;
   }
 }
@@ -122,6 +146,11 @@ figure {
     width: 224px;
     margin: 10px;
   }
+  @include desktop {
+    height: 126px;
+    width: 224px;
+    margin: 10px;
+  }
 }
 
 .article-section {
@@ -129,9 +158,16 @@ figure {
     display: flex;
     flex-direction: row;
   }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .paragraph {
   @include tablet {
+    padding-left: 1.5rem;
+  }
+  @include desktop {
     padding-left: 1.5rem;
   }
 }

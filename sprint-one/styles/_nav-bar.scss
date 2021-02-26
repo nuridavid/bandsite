@@ -19,11 +19,20 @@
     height: 80px;
     padding-top: 0;
   }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    padding-top: 0;
+  }
 
   &-item {
     display: flex;
     padding-bottom: 12px;
     @include tablet {
+      padding-bottom: 1.6rem;
+    }
+    @include desktop {
       padding-bottom: 1.6rem;
     }
   }
@@ -32,6 +41,10 @@
   padding-top: 1rem;
 
   @include tablet {
+    padding: 0;
+    margin-right: 1rem;
+  }
+  @include desktop {
     padding: 0;
     margin-right: 1rem;
   }
@@ -56,6 +69,9 @@
   @include tablet {
     margin: 0 1.5rem;
   }
+  @include desktop {
+    margin: 0 1.5rem;
+  }
 }
 // box with biography section item inside
 .bio-box {
@@ -64,6 +80,10 @@
   bottom: 0%;
   padding-top: 11px;
   @include tablet {
+    width: 12%;
+    padding-top: 2rem;
+  }
+  @include desktop {
     width: 12%;
     padding-top: 2rem;
   }
