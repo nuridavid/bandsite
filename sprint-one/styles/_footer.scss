@@ -14,6 +14,25 @@ footer {
     padding: 3rem 11.25rem;
   }
 }
+
+p,
+address {
+  font-family: "Avenir Next";
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 200;
+  font-style: normal;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 .logo__appear {
   @include tablet {
     background-image: url("/sprint-one/assets/Logo/Logo-bandsite.png");
@@ -41,7 +60,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 73.5%;
+    width: 76%;
   }
 }
 // three individual column sections
@@ -126,6 +145,9 @@ footer {
 .separation {
   padding: 1rem 0;
 
+  @include tablet {
+    padding: 0.75rem 0;
+  }
   @include desktop {
     padding: 0.75rem 0;
   }

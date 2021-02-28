@@ -129,6 +129,8 @@
           justify-content: center;
   width: 50%;
   bottom: 0%;
+  color: white;
+  opacity: 85%;
   padding-top: 11px;
 }
 
@@ -189,6 +191,31 @@ footer {
   }
 }
 
+p,
+address {
+  font-family: "Avenir Next";
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 200;
+  font-style: normal;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  p,
+  address {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  p,
+  address {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .logo__appear {
     background-image: url("/sprint-one/assets/Logo/Logo-bandsite.png");
@@ -241,7 +268,7 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 73.5%;
+    width: 76%;
   }
 }
 
@@ -372,6 +399,12 @@ footer {
 
 .separation {
   padding: 1rem 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .separation {
+    padding: 0.75rem 0;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -636,6 +669,7 @@ li {
   .about__img {
     height: 450px;
     width: 896px;
+    margin-bottom: 3rem;
   }
 }
 
@@ -652,6 +686,8 @@ li {
 @media only screen and (min-width: 1440px) {
   .about__header {
     margin-bottom: 3rem;
+    margin-top: 0;
+    margin-left: -5.75rem;
   }
 }
 

@@ -172,6 +172,7 @@ li {
   @include desktop {
     height: 450px;
     width: 896px;
+    margin-bottom: 3rem;
   }
 }
 
@@ -180,8 +181,11 @@ li {
   @include tablet {
     margin: 2rem 0;
   }
+
   @include desktop {
     margin-bottom: 3rem;
+    margin-top: 0;
+    margin-left: -5.75rem;
   }
 }
 
