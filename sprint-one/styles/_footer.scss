@@ -14,13 +14,13 @@ footer {
     padding: 3rem 11.25rem;
   }
 }
-.logo-appear {
+.logo__appear {
   @include tablet {
     background-image: url("/sprint-one/assets/Logo/Logo-bandsite.png");
     background-repeat: no-repeat;
-    height: 30px;
-    width: 120px;
-    margin-left: 1rem;
+    height: 1.5rem;
+    width: 7.5rem;
+    display: flex;
   }
   @include desktop {
     background-image: url("/sprint-one/assets/Logo/Logo-bandsite.png");
@@ -45,7 +45,7 @@ footer {
   }
 }
 // three individual column sections
-.footer-text {
+.footer__text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -57,45 +57,60 @@ footer {
     display: flex;
   }
 }
-.top-bottom-section {
+.top-bottom__section {
   @include tablet {
     margin-bottom: 1rem;
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    width: 60%;
     justify-content: space-between;
   }
   @include desktop {
     margin-bottom: 1rem;
     display: flex;
-    width: 41%;
+    width: 43.5%;
     justify-content: space-between;
   }
 }
-.footer-logo-box {
+.footer__logo-box {
   @include desktop {
     display: flex;
     justify-self: flex-end;
   }
 }
+.icon {
+  height: 1.5rem;
+
+  @include desktop {
+    height: 1.7rem;
+    margin: 0 1rem;
+  }
+}
 
 // header on top of footer section
-.bottom-header {
+.bottom__header {
   margin-bottom: 1rem;
 }
 
 // horizontal box with icons inside
-.icon-section {
+.icon__section {
   display: flex;
-  width: 50%;
+  width: 100%;
+  height: 5rem;
+  margin-bottom: -2rem;
+  margin-left: -1rem;
   justify-content: space-around;
   @include tablet {
     width: 10rem;
     height: 1.5rem;
+    margin: 0;
   }
   @include desktop {
     width: 10rem;
     height: 2rem;
-    justify-content: space-between;
+    justify-content: center;
+    width: 50%;
+    margin: none;
   }
 }
 // space in between elements in footer
@@ -113,7 +128,13 @@ footer {
     margin-top: 2.5rem;
   }
 }
-.top-footer-section-connection {
+.top-footer-section__connection {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   @include desktop {
     display: flex;
     justify-content: space-between;

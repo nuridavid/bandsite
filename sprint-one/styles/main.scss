@@ -17,7 +17,7 @@ body {
 }
 
 // image right under nav-bar
-.background-img {
+.background__img {
   background-image: url("/sprint-one/assets/zachary-smith-zorgErvL_Fs-unsplash.jpg");
   background-size: cover;
   height: 183px;
@@ -46,8 +46,8 @@ body {
 
 // whole middle section
 .about {
-  background-color: white;
-  margin-bottom: 2.5rem;
+  background-color: #fafafa;
+
   padding: 0 1rem;
   color: #323232;
   &-header {
@@ -60,14 +60,14 @@ body {
   }
   @include desktop {
     display: flex;
-    align-items: center;
+
     flex-direction: column;
     padding: 3rem 17rem;
   }
 }
 
 // image at top of about section
-.about-img {
+.about__img {
   background-image: url("/sprint-one/assets/sam-moqadam-9sfPj0QzOEU-unsplash.jpg");
   background-size: cover;
   width: 100%;
@@ -83,6 +83,22 @@ body {
   }
 }
 
+.about__header {
+  margin: 2rem 0 1.5rem 0;
+  @include tablet {
+    margin: 2rem 0;
+  }
+  @include desktop {
+    margin-bottom: 3rem;
+  }
+}
+
+.figcaption {
+  @include desktop {
+    margin: 2.5rem 0 3.5rem 0;
+  }
+}
+
 // whole text/article section
 figure {
   width: 100%;
@@ -93,11 +109,18 @@ figure {
 // quote at top of about section
 .quote {
   margin-bottom: 2rem;
+
+  @include desktop {
+    margin-top: 3rem;
+  }
 }
 
 // article h1
-.paragraph-header {
+.paragraph__header {
   margin-bottom: 1.5rem;
+  @include desktop {
+    margin-bottom: 2rem;
+  }
 }
 
 // grid of pictures
@@ -105,8 +128,6 @@ figure {
   display: flex;
   flex-direction: column;
   padding: 0 1rem 1rem 1rem;
-
-  background-color: lightgray;
 
   @include tablet {
     flex-direction: row;
@@ -119,16 +140,17 @@ figure {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
+    width: 85vw;
   }
 }
-.gallery-section {
-  background-color: lightgray;
+.gallery__section {
+  background-color: #e1e1e1;
   @include desktop {
     padding: 0 11.25rem 2.5rem 11.25rem;
   }
 }
 //  heading on top of gallery
-.gallery-heading {
+.gallery__heading {
   padding: 2rem 0 1.5rem 1rem;
 
   @include tablet {
@@ -139,7 +161,7 @@ figure {
   }
 }
 // each image without a class- only the grid pictures
-.img-gallery {
+.gallery__img {
   margin-bottom: 1rem;
 
   @include tablet {
@@ -154,7 +176,7 @@ figure {
   }
 }
 
-.article-section {
+.article__section {
   @include tablet {
     display: flex;
     flex-direction: row;
@@ -169,6 +191,6 @@ figure {
     padding-left: 1.5rem;
   }
   @include desktop {
-    padding-left: 1.5rem;
+    padding-left: 2.5rem;
   }
 }
