@@ -6,7 +6,7 @@
   position: fixed;
   top: 0%;
   left: 0%;
-  height: 80px;
+  height: 5rem;
 
   display: flex;
   flex-direction: column;
@@ -16,20 +16,20 @@
   @include tablet {
     display: flex;
     flex-direction: row;
-    height: 80px;
+    height: 5rem;
     padding-top: 0;
   }
   @include desktop {
     display: flex;
     flex-direction: row;
-    height: 80px;
+    height: 5rem;
     padding-top: 0;
     padding-left: 11.25rem;
   }
 
   &-item {
     display: flex;
-    padding-bottom: 12px;
+    padding-bottom: 0.75rem;
     @include tablet {
       padding-bottom: 1.6rem;
     }

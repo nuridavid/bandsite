@@ -18,19 +18,19 @@ footer {
 p,
 address {
   font-family: "Avenir Next";
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 0.813rem;
+  line-height: 1.125rem;
   font-weight: 200;
   font-style: normal;
 
   @include tablet {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   @include desktop {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 .logo__appear {
