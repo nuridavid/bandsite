@@ -94,6 +94,8 @@
 // box with shows section item inside
 .show-box {
   @extend .bio-box;
+  color: gray;
+  opacity: 60%;
 }
 // link selector
 a {

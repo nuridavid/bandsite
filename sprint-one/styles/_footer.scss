@@ -66,7 +66,7 @@ footer {
     justify-content: space-between;
   }
   @include desktop {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     display: flex;
     width: 43.5%;
     justify-content: space-between;
@@ -118,7 +118,7 @@ footer {
     width: 10rem;
     height: 2rem;
     justify-content: center;
-    width: 50%;
+
     margin: none;
   }
 }
@@ -127,14 +127,14 @@ footer {
   padding: 1rem 0;
 
   @include desktop {
-    padding: 20px 0;
+    padding: 0.75rem 0;
   }
 }
 // copyright at the bottom of footer
 .copyright {
   margin: 1rem 0;
   @include desktop {
-    margin-top: 2.5rem;
+    margin-top: 1.75rem;
   }
 }
 .top-footer-section__connection {

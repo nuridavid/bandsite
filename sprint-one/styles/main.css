@@ -148,6 +148,11 @@
   }
 }
 
+.show-box {
+  color: gray;
+  opacity: 60%;
+}
+
 a {
   text-decoration: none;
   list-style-type: none;
@@ -288,7 +293,7 @@ footer {
 
 @media only screen and (min-width: 1440px) {
   .top-bottom__section {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -361,7 +366,6 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 50%;
     margin: none;
   }
 }
@@ -372,7 +376,7 @@ footer {
 
 @media only screen and (min-width: 1440px) {
   .separation {
-    padding: 20px 0;
+    padding: 0.75rem 0;
   }
 }
 
@@ -382,7 +386,7 @@ footer {
 
 @media only screen and (min-width: 1440px) {
   .copyright {
-    margin-top: 2.5rem;
+    margin-top: 1.75rem;
   }
 }
 
@@ -437,6 +441,14 @@ h1 {
   line-height: 2rem;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  h1 {
+    font-family: "Avenir Next";
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   h1 {
     font-family: "Avenir Next";
@@ -447,8 +459,16 @@ h1 {
 
 h2 {
   font-family: "Avenir Next";
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  h2 {
+    font-family: "Avenir Next";
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -456,6 +476,55 @@ h2 {
     font-family: "Avenir Next";
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+}
+
+h3 {
+  font-family: "Avenir Next";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h4 {
+  font-family: "Avenir Next";
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  h4 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  h4 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+li {
+  font-family: "Avenir Next";
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  li {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -495,13 +564,20 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 60%;
 }
 
 .title {
   font-family: "Avenir Next";
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .title {
+    font-family: "Avenir Next";
+    font-size: 60px;
+    line-height: 68px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
