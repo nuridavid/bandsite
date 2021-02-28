@@ -131,21 +131,21 @@
   bottom: 0%;
   color: white;
   opacity: 85%;
-  padding-top: 11px;
+  padding-top: 0.409rem;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .bio-box, .show-box {
-    width: 12%;
-    padding-top: 2rem;
+    width: 80px;
+    padding-top: 1.85rem;
     margin: 0 2rem;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .bio-box, .show-box {
-    width: 10%;
-    padding-top: 2rem;
+    width: 80px;
+    padding-top: 1.9rem;
     margin-left: 3.5rem;
   }
 }
