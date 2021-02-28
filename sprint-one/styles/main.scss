@@ -16,6 +16,30 @@ body {
   flex-direction: column;
 }
 
+h1 {
+  font-family: "Avenir Next";
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  @include desktop {
+    font-family: "Avenir Next";
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+
+h2 {
+  font-family: "Avenir Next";
+
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  @include desktop {
+    font-family: "Avenir Next";
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
 // image right under nav-bar
 .background__img {
   background-image: url("/sprint-one/assets/zachary-smith-zorgErvL_Fs-unsplash.jpg");
@@ -44,11 +68,23 @@ body {
   max-width: 60%;
 }
 
+.title {
+  font-family: "Avenir Next";
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  @include desktop {
+    font-family: "Avenir Next";
+    font-size: 60px;
+    line-height: 68px;
+  }
+}
+
 // whole middle section
 .about {
   background-color: #fafafa;
 
-  padding: 0 1rem;
+  padding: 0 1rem 2.5rem 1rem;
   color: #323232;
   &-header {
     margin: 2rem 1rem 1.5rem 0;
@@ -56,7 +92,7 @@ body {
   }
 
   @include tablet {
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 2.5rem 1.5rem;
   }
   @include desktop {
     display: flex;
@@ -93,12 +129,6 @@ body {
   }
 }
 
-.figcaption {
-  @include desktop {
-    margin: 2.5rem 0 3.5rem 0;
-  }
-}
-
 // whole text/article section
 figure {
   width: 100%;
@@ -109,10 +139,6 @@ figure {
 // quote at top of about section
 .quote {
   margin-bottom: 2rem;
-
-  @include desktop {
-    margin-top: 3rem;
-  }
 }
 
 // article h1
@@ -152,6 +178,7 @@ figure {
 //  heading on top of gallery
 .gallery__heading {
   padding: 2rem 0 1.5rem 1rem;
+  color: #323232;
 
   @include tablet {
     padding-left: 1.5rem;
@@ -160,6 +187,7 @@ figure {
     padding: 3rem 0 4rem 0;
   }
 }
+
 // each image without a class- only the grid pictures
 .gallery__img {
   margin-bottom: 1rem;

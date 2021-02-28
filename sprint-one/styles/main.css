@@ -236,7 +236,7 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 70%;
+    width: 73.5%;
   }
 }
 
@@ -321,6 +321,17 @@ footer {
 
 .bottom__header {
   margin-bottom: 1rem;
+  font-family: "Avenir Next";
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  .bottom__header {
+    font-family: "Avenir Next";
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
 }
 
 .icon__section {
@@ -399,6 +410,11 @@ footer {
   }
 }
 
+@font-face {
+  font-family: "Avenir next";
+  src: url("/sprint-one/assets/AvenirNextProLT/Alternative files/AvenirNextProLT") format(true-type);
+}
+
 * {
   margin: 0;
   padding: 0%;
@@ -413,6 +429,34 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+h1 {
+  font-family: "Avenir Next";
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  h1 {
+    font-family: "Avenir Next";
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+
+h2 {
+  font-family: "Avenir Next";
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  h2 {
+    font-family: "Avenir Next";
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 .background__img {
@@ -454,9 +498,23 @@ body {
   max-width: 60%;
 }
 
+.title {
+  font-family: "Avenir Next";
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  .title {
+    font-family: "Avenir Next";
+    font-size: 60px;
+    line-height: 68px;
+  }
+}
+
 .about {
   background-color: #fafafa;
-  padding: 0 1rem;
+  padding: 0 1rem 2.5rem 1rem;
   color: #323232;
 }
 
@@ -467,7 +525,7 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .about {
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 2.5rem 1.5rem;
   }
 }
 
@@ -521,12 +579,6 @@ body {
   }
 }
 
-@media only screen and (min-width: 1440px) {
-  .figcaption {
-    margin: 2.5rem 0 3.5rem 0;
-  }
-}
-
 figure {
   width: 100%;
   color: #323232;
@@ -535,12 +587,6 @@ figure {
 
 .quote {
   margin-bottom: 2rem;
-}
-
-@media only screen and (min-width: 1440px) {
-  .quote {
-    margin-top: 3rem;
-  }
 }
 
 .paragraph__header {
@@ -605,6 +651,7 @@ figure {
 
 .gallery__heading {
   padding: 2rem 0 1.5rem 1rem;
+  color: #323232;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
