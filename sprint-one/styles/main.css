@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 .top-nav__bar {
   background-color: #323232;
   color: white;
@@ -193,7 +194,6 @@ footer {
 
 p,
 address {
-  font-family: "Avenir Next";
   font-size: 0.813rem;
   line-height: 1.125rem;
   font-weight: 200;
@@ -353,14 +353,12 @@ address {
 
 .bottom__header {
   margin-bottom: 1rem;
-  font-family: "Avenir Next";
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
 @media only screen and (min-width: 1440px) {
   .bottom__header {
-    font-family: "Avenir Next";
     font-size: 2.25rem;
     line-height: 2.75rem;
   }
@@ -455,6 +453,7 @@ address {
 * {
   margin: 0;
   padding: 0%;
+  font-family: "Avenir Next", "Roboto", sans-serif;
 }
 
 body {
@@ -469,14 +468,12 @@ body {
 }
 
 h1 {
-  font-family: "Avenir Next";
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   h1 {
-    font-family: "Avenir Next";
     font-size: 2.25rem;
     line-height: 2.75rem;
   }
@@ -484,21 +481,18 @@ h1 {
 
 @media only screen and (min-width: 1440px) {
   h1 {
-    font-family: "Avenir Next";
     font-size: 2.25rem;
     line-height: 2.75rem;
   }
 }
 
 h2 {
-  font-family: "Avenir Next";
   font-size: 0.875rem;
   line-height: 1.125rem;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   h2 {
-    font-family: "Avenir Next";
     font-size: 1.5rem;
     line-height: 2rem;
   }
@@ -506,21 +500,18 @@ h2 {
 
 @media only screen and (min-width: 1440px) {
   h2 {
-    font-family: "Avenir Next";
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 
 h3 {
-  font-family: "Avenir Next";
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
 h4 {
-  font-family: "Avenir Next";
   font-size: 0.813rem;
   line-height: 1.125rem;
   font-weight: 300;
@@ -541,7 +532,6 @@ h4 {
 }
 
 li {
-  font-family: "Avenir Next";
   font-size: 0.813rem;
   line-height: 1.125rem;
   font-weight: 600;
@@ -600,14 +590,12 @@ li {
 }
 
 .title {
-  font-family: "Avenir Next";
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .title {
-    font-family: "Avenir Next";
     font-size: 3.75rem;
     line-height: 4.25rem;
   }
@@ -615,7 +603,6 @@ li {
 
 @media only screen and (min-width: 1440px) {
   .title {
-    font-family: "Avenir Next";
     font-size: 3.75rem;
     line-height: 4.25rem;
   }

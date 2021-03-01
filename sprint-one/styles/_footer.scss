@@ -17,7 +17,6 @@ footer {
 
 p,
 address {
-  font-family: "Avenir Next";
   font-size: 0.813rem;
   line-height: 1.125rem;
   font-weight: 200;
@@ -109,12 +108,11 @@ address {
 // header on top of footer section
 .bottom__header {
   margin-bottom: 1rem;
-  font-family: "Avenir Next";
+
   font-size: 1.5rem;
   line-height: 2rem;
 
   @include desktop {
-    font-family: "Avenir Next";
     font-size: 2.25rem;
     line-height: 2.75rem;
   }
