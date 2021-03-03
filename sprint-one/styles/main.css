@@ -94,7 +94,7 @@
 }
 
 .underlined {
-  border-bottom: 4px white solid;
+  border-bottom: 0.25rem white solid;
 }
 
 .header-box {
