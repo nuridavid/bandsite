@@ -820,4 +820,43 @@ figure {
     padding-left: 2.5rem;
   }
 }
+
+.form__section {
+  height: 100vh;
+  background-color: white;
+  padding: 2rem 1rem 2.5rem 1rem;
+  color: #323232;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #323232;
+}
+
+#name-input, #comment-input {
+  width: 224px;
+}
+
+.button {
+  width: 224px;
+  background: #323232;
+  color: white;
+  border-radius: 1rem;
+}
 /*# sourceMappingURL=main.css.map */

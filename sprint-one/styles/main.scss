@@ -271,3 +271,34 @@ figure {
     padding-left: 2.5rem;
   }
 }
+
+.form__section {
+  height: 100vh;
+
+  background-color: white;
+  padding: 2rem 1rem 2.5rem 1rem;
+  color: #323232;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #323232;
+}
+#name-input {
+  width: 224px;
+}
+
+#comment-input {
+  @extend #name-input;
+}
+
+.button {
+  width: 224px;
+  background: #323232;
+  color: white;
+  border-radius: 1rem;
+}
