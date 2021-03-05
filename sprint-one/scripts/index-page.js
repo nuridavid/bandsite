@@ -1,27 +1,39 @@
-let formSection = document.querySelector(".form__section");
-let button = document.querySelector(".button");
-const commentArray = [
-  {
-    comment: "Nuri David",
-  },
-  {
-    comment: "that was awesome!",
-  },
-  {
-    comment: "5 / 02 / 20",
-  },
-];
+const formSection = document.querySelector("#form__section");
+const name = document.querySelector("#name-Input");
+const comment = document.querySelector("#comment-Input");
 
-function displayComment() {
-  for (let i = 0; i < commentArray.length; i++) {
-    let comment = document.createElement("p");
-    comment.innerText = `${commentArray[i].comment}`;
-    formSection.appendChild(comment);
+const commentContainer = document.querySelector(".comment__container");
+commentContainer.innerHTML = `<h1></h1>`;
+function createComment(e) {
+  let message = `<div><span class="top__comment"><h2> ${comment.value}</h2>
+  </span>
 
-    console.log(commentArray[i].comment);
-  }
+  </div>`;
+
+  const commentInput = e.target.comment.value;
+  const nameInput = e.target.name.value;
+
+  commentContainer.innerHTML = comment + commentContainer.innerHTML;
 }
 
-displayComment();
+const handleSubmit = (event) => {
+  event.preventDefault();
+  createComment(commentInput);
+  //   formSection.reset();
+};
 
-button.addEventListener("click");
+formSection.addEventListener("submit", handleSubmit);
+
+// const submitComment = (values) => {
+//   const commentSubmit = document.querySelector("#form__section");
+//   let commentBox = document.createElement("div");
+//   commentBox.className = "comment__box";
+
+//   for (let i = 0; i < values.length; i++) {
+//     let commentText = document.createElement("p");
+//     commentBox.innerText = values[i];
+//     formSection.appendChild(commentText);
+//   }
+//   commentSubmit.appendChild(commentBox);
+//   formSection.reset();
+// };

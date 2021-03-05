@@ -272,21 +272,20 @@ figure {
   }
 }
 
-.form__section {
-  height: 100vh;
-
+#form__section {
   background-color: white;
   padding: 2rem 1rem 2.5rem 1rem;
   color: #323232;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-.form__box {
+#form__box {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  margin-bottom: 1rem;
   color: #323232;
+  justify-content: flex-end;
 }
 #name-input {
   width: 224px;
@@ -301,4 +300,15 @@ figure {
   background: #323232;
   color: white;
   border-radius: 1rem;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+
+  align-content: flex-end;
+}
+
+.top__comment {
+  display: flex;
 }
