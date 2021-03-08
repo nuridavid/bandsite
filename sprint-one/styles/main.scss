@@ -281,42 +281,21 @@ figure {
   justify-content: space-between;
 }
 
-#form__box {
-  display: flex;
-  margin-bottom: 1rem;
-  color: #323232;
-  justify-content: flex-end;
-}
-#name-input {
-  width: 224px;
-}
-
-#comment-input {
-  @extend #name-input;
-}
-
-.button {
+.sub-btn {
   width: 224px;
   background: #323232;
   color: white;
   border-radius: 1rem;
 }
 
-fieldset {
-  display: flex;
-  flex-direction: column;
-
-  align-content: flex-end;
-}
-
 .top__comment {
   display: flex;
+  justify-content: space-between;
 }
 
 .commentLi {
   display: flex;
-  background-color: black;
-  flex-direction: column;
+  color: black;
   padding: 1rem;
 }
 
@@ -325,63 +304,4 @@ fieldset {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
-}
-// .comment {
-//   display: flex;
-//   background-color: white;
-//   flex-direction: column;
-//   padding: 1rem;
-//   &__row {
-//     display: flex;
-//   }
-//   &__formText {
-//     display: flex;
-//     width: 224px;
-//     height: 10rem;
-//     align-items: flex-start;
-//     justify-content: flex-start;
-//     border-radius: 5px;
-//   }
-//   &__formName {
-//     display: flex;
-//     width: 224px;
-//     border-radius: 10px;
-//   }
-//   &__action {
-//     display: flex;
-//     width: 224px;
-//     height: 2.5rem;
-//     color: white;
-//     background-color: #323232;
-//     align-items: center;
-//     justify-content: center;
-//     border: none;
-//     border-radius: 5px;
-//   }
-//   &__label {
-//     text-transform: uppercase;
-//     color: #afafaf;
-//     font-weight: 700;
-//     font-size: 0.75rem;
-//     margin-top: 1rem;
-//   }
-//   &__post {
-//     &--name {
-//       display: flex;
-//     }
-//     &--date {
-//       display: flex;
-//     }
-//     &--avatar {
-//       display: flex;
-//       border-radius: 50%;
-//       background-color: #fafafa;
-//     }
-//     &--body {
-//       border-bottom: 2px solid #fafafa;
-//     }
-//   }
-// }
-#submitComment {
-  flex-direction: column;
 }

@@ -24,7 +24,7 @@ let form = document.getElementById("form");
 let comment = document.getElementById("form__comment");
 let timestamp = document.getElementById("form__timestamp");
 let commentBox = document.querySelector(".comment__holder");
-let name = document.querySelector(".form__name");
+let name = document.querySelector("#form__name");
 
 const comments = defaultComments
   .map((comment) => {
@@ -32,14 +32,16 @@ const comments = defaultComments
   <div class="pic__box">
   <div class="pic"></div>
   <div class="text">
-      <div class="nameDate">
+      <div class="top__comment">
           <div class="comment__name">${comment.name}</div>
           <div class="comment__date">${comment.date}</div>
       </div>
       <div class="commentLi__comment">${comment.comment}</div>
   </div>
   </div>
-  </li>`;
+
+  </li>
+  <hr>`;
   })
   .join("");
 
@@ -67,7 +69,7 @@ form.addEventListener("submit", (event) => {
   <div class="pic"></div>
   <div class="text">
       <div class="nameDate">
-          <div class="comment__name">${comment.name}</div>
+          <div class="top__comment">${name.value}</div>
           <div class="comment__date">${today}</div>
       </div>
       <div class="commentLi__comment">${comment.value}</div>
