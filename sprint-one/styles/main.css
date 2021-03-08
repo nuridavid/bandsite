@@ -821,7 +821,7 @@ figure {
   }
 }
 
-#form__section {
+#form {
   background-color: white;
   padding: 2rem 1rem 2.5rem 1rem;
   color: #323232;
@@ -875,5 +875,31 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.commentLi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.pic {
+  background: gray;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+#submitComment {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=main.css.map */
