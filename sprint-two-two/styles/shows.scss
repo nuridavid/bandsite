@@ -1,0 +1,143 @@
+// partial call section
+@import "mixins";
+@import "nav-bar";
+@import "footer";
+@import "fonts";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// universal selectors
+* {
+  margin: 0;
+  padding: 0%;
+  font-family: "Avenir Next", "Roboto", sans-serif;
+}
+// body selector
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  @include tablet {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+  @include desktop {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+
+h2 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+
+  @include tablet {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  @include desktop {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h4 {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 300;
+
+  @include tablet {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+
+  @include desktop {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+}
+li {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 600;
+
+  @include tablet {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  @include desktop {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+// image right under nav-bar
+.background__img {
+  background-image: url("/sprint-two/assets/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg");
+  background-size: cover;
+
+  height: 472px;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 4rem 1rem;
+
+  @include tablet {
+    height: 25rem;
+    padding-left: 1.5rem;
+  }
+  @include desktop {
+    height: 41.875rem;
+    padding-left: 11.25rem;
+  }
+}
+
+// text box inside header image
+.title-box {
+  height: 100%;
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2rem;
+  line-height: 2rem;
+
+  @include tablet {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+
+  @include desktop {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+}
+
+.ticket__section {
+  background-color: white;
+  padding: 2rem 1rem;
+  height: 100vh;
+}
+
+table {
+  background-color: white;
+
+  color: black;
+}

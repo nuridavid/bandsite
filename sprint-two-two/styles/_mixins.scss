@@ -1,0 +1,16 @@
+@mixin footer-seperation {
+  margin-bottom: 1rem;
+}
+
+// this mixin allows @content that is applied inside to apply when page is a Minimum of  768px and a maximum of 1080px
+@mixin tablet {
+  @media only screen and (min-width: 768px) and (max-width: 1439px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 1440px) {
+    @content;
+  }
+}
