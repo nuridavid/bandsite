@@ -831,7 +831,7 @@ figure {
 
 #form {
   background-color: white;
-  height: 15rem;
+  width: 100%;
   color: #323232;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -849,12 +849,6 @@ figure {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
-
-.box__connection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .sub-btn {
@@ -914,6 +908,15 @@ figure {
   padding: 1rem;
   border-radius: 3px;
   width: 224px;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  resize: none;
+  height: 7rem;
+}
+
+label {
+  margin-top: 1rem;
 }
 
 #form__name {
