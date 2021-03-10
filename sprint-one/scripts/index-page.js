@@ -1,3 +1,14 @@
+// const url = "https://reqres.in/api/products/3";
+
+// axios
+//   .get(url)
+//   .then((res) => {
+//     console.log(res.data);
+//   })
+//   .catch((error) => {
+//     console.log("error");
+//   });
+
 const defaultComments = [
   {
     name: "Michael Lyons",
@@ -28,20 +39,21 @@ let name = document.querySelector("#form__name");
 
 const comments = defaultComments
   .map((comment) => {
-    return `<li class="commentLi">
+    return `<div class="commentLi">
   <div class="pic__box">
   <div class="pic"></div>
+  </div>
   <div class="text">
       <div class="top__comment">
           <div class="comment__name">${comment.name}</div>
           <div class="comment__date">${comment.date}</div>
       </div>
       <div class="commentLi__comment">${comment.comment}</div>
-  </div>
+  
   </div>
 
-  </li>
-  <hr>`;
+  </div>
+  `;
   })
   .join("");
 
@@ -64,18 +76,21 @@ console.log(today);
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  let newComment = `<li class="commentLi">
+  let newComment = `<div class="commentLi">
   <div class="pic__box">
   <div class="pic"></div>
+  </div>
   <div class="text">
-      <div class="nameDate">
-          <div class="top__comment">${name.value}</div>
+      <div class="top__comment">
+          <div class="comment__name">${name.value}</div>
           <div class="comment__date">${today}</div>
       </div>
       <div class="commentLi__comment">${comment.value}</div>
+  
   </div>
+
   </div>
-  </li>`;
+  `;
   commentBox.innerHTML = newComment + commentBox.innerHTML;
   form.reset();
 });

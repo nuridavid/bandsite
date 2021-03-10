@@ -821,9 +821,17 @@ figure {
   }
 }
 
+#form__section {
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+#form__section h1 {
+  color: black;
+}
+
 #form {
   background-color: white;
-  padding: 2rem 1rem 2.5rem 1rem;
+  height: 15rem;
   color: #323232;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -837,11 +845,35 @@ figure {
           justify-content: space-between;
 }
 
+#form input {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.box__connection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .sub-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 224px;
-  background: #323232;
+  height: 3rem;
   color: white;
-  border-radius: 1rem;
+  background-color: #323232;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
 .top__comment {
@@ -851,6 +883,7 @@ figure {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .commentLi {
@@ -858,13 +891,48 @@ figure {
   display: -ms-flexbox;
   display: flex;
   color: black;
-  padding: 1rem;
+  padding: 1.5rem 0;
+  border-top: black 1px solid;
 }
 
 .pic {
-  background: gray;
+  background: lightgray;
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
+}
+
+#form__comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  border-radius: 3px;
+  width: 224px;
+}
+
+#form__name {
+  width: 224px;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.comment__date {
+  color: gray;
+  font-weight: 200;
+}
+
+.commentLi__comment {
+  font-weight: 300;
+}
+
+input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=main.css.map */

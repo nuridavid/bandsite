@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>nuri-david-bandsite</title>
     <link rel="stylesheet" href="/sprint-one/styles/main.css" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" type="text/javascript"></script> -->
   </head>
   <body>
     <header>
@@ -24,7 +25,7 @@
             </li>
           </div>
           <div class="show-box">
-            <li class="top-nav__bar-item"><a href="/sprint-two/pages/shows.html">Shows<a></li>
+            <li class="top-nav__bar-item"><a href="/sprint-two-two/pages/shows.html">Shows<a></li>
           </div>
     
         </ul>
@@ -79,14 +80,18 @@
 
   <h1> Join The Conversation </h1>
     <form id="form">
-
+    
+      <div class="pic__box">
+        <div class="pic"></div>
+        </div>
         <label for="form__name"> Name: </label>
         <input id="form__name"
-        placeholder="name" type="text">
+        placeholder="name" type="text" required>
         <label for="form__comment"> comment: </label>
-        <input id="form__comment" placeholder="comment"  type="text">
+        <textarea id="form__comment" required placeholder="comment" col="5" rows="5" ></textarea>
         
         <input class="sub-btn" type="submit">
+     
     </form>
     <ul class="comment__holder">
 

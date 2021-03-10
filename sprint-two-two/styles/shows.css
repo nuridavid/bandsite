@@ -460,6 +460,7 @@ address {
 
 body {
   background-color: white;
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -554,8 +555,10 @@ li {
 }
 
 .background__img {
-  background-image: url("/sprint-two/assets/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg");
+  background-image: url("/sprint-two-two/assets/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg");
   background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 472px;
   margin-top: 5rem;
   display: -webkit-box;
@@ -565,13 +568,9 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding: 4rem 1rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 4rem 1rem 2rem 1rem;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
@@ -590,6 +589,7 @@ li {
 
 .title-box {
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -627,11 +627,58 @@ li {
 .ticket__section {
   background-color: white;
   padding: 2rem 1rem;
-  height: 100vh;
 }
 
 table {
   background-color: white;
   color: black;
+}
+
+.ticket__section {
+  height: 100%;
+}
+
+.shows__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: gray 0.5px solid;
+  padding: 1rem 0;
+  line-height: 2rem;
+}
+
+.shows__box p {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: lightgray;
+}
+
+.shows__box .header {
+  font-weight: 600;
+}
+
+button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-weight: 600;
+  margin-top: 2rem;
+  height: 3rem;
+  color: white;
+  background-color: #323232;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=shows.css.map */

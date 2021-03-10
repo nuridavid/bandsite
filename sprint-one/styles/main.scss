@@ -271,37 +271,86 @@ figure {
     padding-left: 2.5rem;
   }
 }
+#form__section {
+  padding: 2rem 1rem 2rem 1rem;
 
+  h1 {
+    color: black;
+  }
+}
 #form {
   background-color: white;
-  padding: 2rem 1rem 2.5rem 1rem;
+  height: 15rem;
   color: #323232;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  input {
+    align-items: flex-end;
+  }
 }
 
 .sub-btn {
+  display: flex;
   width: 224px;
-  background: #323232;
+  height: 3rem;
   color: white;
-  border-radius: 1rem;
+  background-color: #323232;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
 .top__comment {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .commentLi {
   display: flex;
   color: black;
-  padding: 1rem;
+  padding: 1.5rem 0;
+  border-top: black 1px solid;
 }
 
 .pic {
-  background: gray;
+  background: lightgray;
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
+
+  // &__box {
+  //   display: flex;
+  // }
+}
+
+#form__comment {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 3px;
+  width: 224px;
+}
+
+#form__name {
+  width: 224px;
+  padding: 1rem;
+
+  border-radius: 5px;
+}
+
+.comment__date {
+  color: gray;
+  font-weight: 200;
+}
+.commentLi__comment {
+  font-weight: 300;
+}
+input {
+  box-sizing: border-box;
 }
