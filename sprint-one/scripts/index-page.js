@@ -16,7 +16,14 @@ axios
     console.log(res);
     defaultComments = res.data;
     let comments = defaultComments
+      .sort((a, b) => {
+        return b.timestamp - a.timestamp;
+      })
       .map((comment) => {
+        let timestamp = moment(comment.timestamp).format(
+          "MMMM Do YYYY, h:mm:ss a"
+        );
+        console.log(timestamp);
         return `<div class="commentLi">
        <div class="pic__box">
          <div class="pic"></div>
@@ -24,7 +31,7 @@ axios
          <div class="text">
             <div class="top__comment">
                 <div class="comment__name">${comment.name}</div>
-                <div class="comment__date">${comment.date}</div>
+                <div class="comment__date">${timestamp}</div>
             </div>
             <div class="commentLi__comment">${comment.comment}</div>
       
@@ -38,32 +45,9 @@ axios
   })
 
   .catch((error) => {
-    console.log("error");
+    console.log(error);
   });
 
-// const comments = defaultComments
-//   .map((comment) => {
-//     return `<div class="commentLi">
-//   <div class="pic__box">
-//   <div class="pic"></div>
-//   </div>
-//   <div class="text">
-//       <div class="top__comment">
-//           <div class="comment__name">${comment.name}</div>
-//           <div class="comment__date">${comment.date}</div>
-//       </div>
-//       <div class="commentLi__comment">${comment.comment}</div>
-
-//   </div>
-
-//   </div>
-//   `;
-//   })
-//   .join("");
-
-// BREAK
-// BREAK
-// BREAK
 let today = new Date();
 let dd = today.getDate();
 let mm = today.getMonth() + 1;
@@ -79,21 +63,44 @@ console.log(today);
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  let newComment = `<div class="commentLi">
-  <div class="pic__box">
-  <div class="pic"></div>
-  </div>
-  <div class="text">
-      <div class="top__comment">
-          <div class="comment__name">${name.value}</div>
-          <div class="comment__date">${today}</div>
-      </div>
-      <div class="commentLi__comment">${comment.value}</div>
-  
-  </div>
 
-  </div>
-  `;
-  commentBox.innerHTML = newComment + commentBox.innerHTML;
-  form.reset();
+  axios
+    .post(url + key, {
+      name: name.value,
+      comment: comment.value,
+    })
+    .then((res) => {
+      defaultComments.push(res.data);
+      const newComment = defaultComments
+
+        .sort((a, b) => {
+          return b.timestamp - a.timestamp;
+        })
+        .map((comment) => {
+          let timestamp = moment(comment.timestamp).format(
+            "MMMM Do YYYY, h:mm:ss a"
+          );
+          return `<div class="commentLi">
+    <div class="pic__box">
+    <div class="pic"></div>
+    </div>
+    <div class="text">
+        <div class="top__comment">
+            <div class="comment__name">${comment.name}</div>
+            <div class="comment__date">${timestamp}</div>
+        </div>
+        <div class="commentLi__comment">${comment.comment}</div>
+    
+    </div>
+  
+    </div>`;
+        })
+        .join("");
+      commentBox.innerHTML = newComment;
+      form.reset();
+    })
+
+    .catch((error) => {
+      console.log(error);
+    });
 });
