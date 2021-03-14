@@ -553,7 +553,8 @@ li {
 
 .background__img {
   background-image: url("/sprint-one/assets/zachary-smith-zorgErvL_Fs-unsplash.jpg");
-  background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 11.438rem;
   margin-top: 5rem;
   display: -webkit-box;
@@ -640,7 +641,7 @@ li {
 
 .about__img {
   background-image: url("/sprint-one/assets/sam-moqadam-9sfPj0QzOEU-unsplash.jpg");
-  background-size: cover;
+  background-size: contain;
   width: 100%;
   height: 10rem;
   margin-bottom: 1.5rem;
@@ -894,6 +895,10 @@ figure {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
+}
+
+.pic__box {
+  margin-right: 1rem;
 }
 
 #form__comment {

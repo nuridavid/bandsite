@@ -20,9 +20,7 @@ axios
         return b.timestamp - a.timestamp;
       })
       .map((comment) => {
-        let timestamp = moment(comment.timestamp).format(
-          "MMMM Do YYYY, h:mm:ss a"
-        );
+        let timestamp = moment(comment.timestamp).format("MMMM Do YYYY");
         console.log(timestamp);
         return `<div class="commentLi">
        <div class="pic__box">
@@ -48,19 +46,6 @@ axios
     console.log(error);
   });
 
-let today = new Date();
-let dd = today.getDate();
-let mm = today.getMonth() + 1;
-let yyyy = today.getFullYear();
-if (dd < 10) {
-  dd = "0" + dd;
-}
-if (mm < 10) {
-  mm = "0" + mm;
-}
-today = mm + "/" + dd + "/" + yyyy;
-console.log(today);
-
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -77,14 +62,12 @@ form.addEventListener("submit", (event) => {
           return b.timestamp - a.timestamp;
         })
         .map((comment) => {
-          let timestamp = moment(comment.timestamp).format(
-            "MMMM Do YYYY, h:mm:ss a"
-          );
+          let timestamp = moment(comment.timestamp).format("MMMM Do YYYY");
           return `<div class="commentLi">
     <div class="pic__box">
     <div class="pic"></div>
     </div>
-    <div class="text">
+    
         <div class="top__comment">
             <div class="comment__name">${comment.name}</div>
             <div class="comment__date">${timestamp}</div>
@@ -93,7 +76,7 @@ form.addEventListener("submit", (event) => {
     
     </div>
   
-    </div>`;
+    `;
         })
         .join("");
       commentBox.innerHTML = newComment;
