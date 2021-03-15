@@ -90,16 +90,15 @@ li {
   background-size: cover;
   box-sizing: border-box;
   height: 472px;
-  margin-top: 5rem;
   display: flex;
   flex-direction: column;
 
   justify-content: space-around;
-  padding: 4rem 1rem 2rem 1rem;
+  padding: 4rem 1rem 3rem 1rem;
 
   @include tablet {
-    height: 45rem;
     padding-left: 1.5rem;
+    height: 670px;
   }
   @include desktop {
     height: 41.875rem;
@@ -112,18 +111,25 @@ li {
   height: 100%;
   width: 100%;
   display: flex;
-  align-items: space-between;
-  justify-content: space-between;
+
+  justify-content: center;
   flex-direction: column;
+}
+.top__h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .title {
   font-size: 2rem;
-  line-height: 2rem;
+  line-height: 2.25rem;
+  margin-bottom: 2rem;
+  width: 90%;
 
   @include tablet {
     font-size: 3.75rem;
     line-height: 4.25rem;
+    width: 80%;
   }
 
   @include desktop {
@@ -147,7 +153,7 @@ table {
   height: 100%;
 }
 
-.shows__box {
+.info {
   display: flex;
   flex-direction: column;
   border-bottom: gray 0.5px solid;
@@ -157,19 +163,65 @@ table {
   @include tablet {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
-  p {
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
-    color: lightgray;
+  &__date {
+    margin-bottom: 1.5rem;
+    @include tablet {
+      margin-top: 0.625rem;
+      width: 16vw;
+    }
+    @include desktop {
+      width: 12vw;
+    }
   }
+  &__place {
+    margin-bottom: 1.5rem;
+    @include tablet {
+      margin-top: 0.625rem;
+      width: 16vw;
+    }
+    @include desktop {
+      width: 12vw;
+    }
+  }
+  &__location {
+    margin-bottom: 2rem;
+    @include tablet {
+      margin-top: 0.625rem;
+      width: 15.5vw;
+    }
+    @include desktop {
+      width: 12vw;
+    }
+  }
+  &__button {
+    height: 2.5rem;
+    background-color: #323232;
+    color: #fafafa;
+    border-radius: 4px;
+    border: none;
+    font-family: "AvenirDemi";
+    margin-bottom: 1rem;
+    @include tablet {
+      width: 10rem;
+    }
+    @include desktop {
+      width: 10rem;
+    }
+  }
+}
 
-  .header {
-    font-weight: 600;
+label {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: lightgray;
+
+  @include tablet {
+    display: none;
   }
 }
 
@@ -195,7 +247,22 @@ button {
 header {
   display: flex;
   flex-direction: column;
-  height: 5rem;
-  width: 5rem;
   justify-content: space-between;
+  @include tablet {
+    width: 25%;
+  }
+}
+
+.date__header {
+  @include tablet {
+    margin-bottom: 2rem;
+  }
+}
+
+iframe {
+  height: 6rem;
+  @include tablet {
+    width: 60%;
+    height: 10rem;
+  }
 }

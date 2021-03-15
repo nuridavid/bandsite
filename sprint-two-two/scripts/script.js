@@ -10,20 +10,27 @@ axios
     table = res.data;
     let tableComplete = table
       .map(
-        (row) => `<div class="shows__box"> 
-        <div class="header">
-<label>DATE</label>
-<br>
-      ${row.date}</div>
+        (row) => `
+      
+        
+        <div class="info"> 
+        <div class="info__date">
+        <label>DATE</label>
+      <br>
+      <h3 class="date__header">${row.date}</h3></div>
+
       <div class="header">
       <label>VENUE</label>
-      
-      <div>${row.place}</div>
+  
+      <div class="info__place">${row.place}</div>
       </div>
+
       <div class="header">
       <label>LOCATION</label>
-      <div>${row.location}</div>
+
+      <div class="info__location">${row.location}</div>
       </div>
+
       <button>BUY TICKETS</button>
     </div>`
       )

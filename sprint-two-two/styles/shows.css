@@ -560,7 +560,6 @@ li {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 472px;
-  margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,13 +569,13 @@ li {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 4rem 1rem 2rem 1rem;
+  padding: 4rem 1rem 3rem 1rem;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .background__img {
-    height: 45rem;
     padding-left: 1.5rem;
+    height: 670px;
   }
 }
 
@@ -593,27 +592,32 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
+.top__h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
 .title {
   font-size: 2rem;
-  line-height: 2rem;
+  line-height: 2.25rem;
+  margin-bottom: 2rem;
+  width: 90%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .title {
     font-size: 3.75rem;
     line-height: 4.25rem;
+    width: 80%;
   }
 }
 
@@ -638,7 +642,7 @@ table {
   height: 100%;
 }
 
-.shows__box {
+.info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -652,7 +656,7 @@ table {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
-  .shows__box {
+  .info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -660,23 +664,99 @@ table {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
 }
 
-.shows__box p {
+.info__date {
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .info__date {
+    margin-top: 0.625rem;
+    width: 16vw;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .info__date {
+    width: 12vw;
+  }
+}
+
+.info__place {
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .info__place {
+    margin-top: 0.625rem;
+    width: 16vw;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .info__place {
+    width: 12vw;
+  }
+}
+
+.info__location {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .info__location {
+    margin-top: 0.625rem;
+    width: 15.5vw;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .info__location {
+    width: 12vw;
+  }
+}
+
+.info__button {
+  height: 2.5rem;
+  background-color: #323232;
+  color: #fafafa;
+  border-radius: 4px;
+  border: none;
+  font-family: "AvenirDemi";
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .info__button {
+    width: 10rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .info__button {
+    width: 10rem;
+  }
+}
+
+label {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 500;
   color: lightgray;
 }
 
-.shows__box .header {
-  font-weight: 600;
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  label {
+    display: none;
+  }
 }
 
 button {
@@ -714,10 +794,31 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 5rem;
-  width: 5rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  header {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .date__header {
+    margin-bottom: 2rem;
+  }
+}
+
+iframe {
+  height: 6rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  iframe {
+    width: 60%;
+    height: 10rem;
+  }
 }
 /*# sourceMappingURL=shows.css.map */
