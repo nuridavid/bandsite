@@ -86,10 +86,12 @@ li {
 // image right under nav-bar
 .background__img {
   background-image: url("/sprint-one/assets/zachary-smith-zorgErvL_Fs-unsplash.jpg");
-  object-fit: contain;
+  background-size: cover;
   height: 11.438rem;
   margin-top: 5rem;
   display: flex;
+  width: 100%;
+
   align-items: center;
   padding-left: 1rem;
 
@@ -150,7 +152,9 @@ li {
 // image at top of about section
 .about__img {
   background-image: url("/sprint-one/assets/sam-moqadam-9sfPj0QzOEU-unsplash.jpg");
-  background-size: contain;
+  padding-bottom: 5rem;
+  background-size: cover;
+
   width: 100%;
   height: 10rem;
   margin-bottom: 1.5rem;
@@ -308,15 +312,17 @@ figure {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
+  width: 100%;
 }
-
+.text {
+  width: 100%;
+}
 .commentLi {
   display: flex;
   color: black;
+  width: 100%;
   padding: 1.5rem 0;
   border-top: black 1px solid;
-}
-.text {
 }
 
 .pic {
@@ -357,9 +363,28 @@ label {
   color: gray;
   font-weight: 200;
 }
-.commentLi__comment {
-  font-weight: 300;
+
+#commentLi__comment {
+  word-wrap: break-word;
+  overflow: wrap;
+  hyphens: auto;
+  white-space: normal;
 }
+
 input {
   box-sizing: border-box;
+}
+
+#comment__box {
+  display: flex;
+  color: black;
+  padding: 1.5rem 0;
+  border-top: black 1px solid;
+  word-wrap: wrap;
+}
+
+#form__top {
+  display: flex;
+  margin-top: 2rem;
+  background-color: black;
 }

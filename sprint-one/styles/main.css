@@ -553,13 +553,13 @@ li {
 
 .background__img {
   background-image: url("/sprint-one/assets/zachary-smith-zorgErvL_Fs-unsplash.jpg");
-  -o-object-fit: contain;
-     object-fit: contain;
+  background-size: cover;
   height: 11.438rem;
   margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -641,7 +641,8 @@ li {
 
 .about__img {
   background-image: url("/sprint-one/assets/sam-moqadam-9sfPj0QzOEU-unsplash.jpg");
-  background-size: contain;
+  padding-bottom: 5rem;
+  background-size: cover;
   width: 100%;
   height: 10rem;
   margin-bottom: 1.5rem;
@@ -879,6 +880,11 @@ figure {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 1rem;
+  width: 100%;
+}
+
+.text {
+  width: 100%;
 }
 
 .commentLi {
@@ -886,6 +892,7 @@ figure {
   display: -ms-flexbox;
   display: flex;
   color: black;
+  width: 100%;
   padding: 1.5rem 0;
   border-top: black 1px solid;
 }
@@ -935,12 +942,35 @@ label {
   font-weight: 200;
 }
 
-.commentLi__comment {
-  font-weight: 300;
+#commentLi__comment {
+  word-wrap: break-word;
+  overflow: wrap;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  white-space: normal;
 }
 
 input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+#comment__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  padding: 1.5rem 0;
+  border-top: black 1px solid;
+  word-wrap: wrap;
+}
+
+#form__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  background-color: black;
 }
 /*# sourceMappingURL=main.css.map */

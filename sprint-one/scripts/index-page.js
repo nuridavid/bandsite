@@ -23,6 +23,7 @@ axios
         let timestamp = moment(comment.timestamp).format("MMMM Do YYYY");
         console.log(timestamp);
         return `<div class="commentLi">
+        
        <div class="pic__box">
          <div class="pic"></div>
          </div>
@@ -31,7 +32,7 @@ axios
                 <div class="comment__name">${comment.name}</div>
                 <div class="comment__date">${timestamp}</div>
             </div>
-            <div class="commentLi__comment">${comment.comment}</div>
+            <div id="commentLi__comment">${comment.comment}</div>
       
          </div>
       
@@ -67,13 +68,14 @@ form.addEventListener("submit", (event) => {
     <div class="pic__box">
     <div class="pic"></div>
     </div>
-    
+    <div class="text">
         <div class="top__comment">
             <div class="comment__name">${comment.name}</div>
             <div class="comment__date">${timestamp}</div>
+            
         </div>
-        <div class="commentLi__comment">${comment.comment}</div>
-    
+        <div id="commentLi__comment">${comment.comment}</div>
+    </div>
     </div>
   
     `;
