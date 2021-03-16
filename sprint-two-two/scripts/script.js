@@ -30,8 +30,9 @@ axios
 
       <div class="info__location">${row.location}</div>
       </div>
+      
+      <a href="https://www.ticketmaster.com/onerepublic-tickets/artist/1159376"><button class="info__button">BUY TICKETS</button></a>
 
-      <button>BUY TICKETS</button>
     </div>`
       )
       .join("");

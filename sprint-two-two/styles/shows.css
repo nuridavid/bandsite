@@ -583,11 +583,17 @@ li {
   .background__img {
     height: 41.875rem;
     padding-left: 11.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
 .title-box {
-  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -601,9 +607,20 @@ li {
           flex-direction: column;
 }
 
+@media only screen and (min-width: 1440px) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .top__h3 {
   font-weight: 700;
   margin-bottom: 1rem;
+  margin-top: 3rem;
 }
 
 .title {
@@ -633,6 +650,24 @@ li {
   padding: 2rem 1rem;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .ticket__section {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .ticket__section {
+    padding: 2rem 11.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 table {
   background-color: white;
   color: black;
@@ -656,6 +691,24 @@ table {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
   .info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -704,23 +757,24 @@ table {
 @media only screen and (min-width: 1440px) {
   .info__place {
     width: 12vw;
+    margin-top: 2rem;
   }
-}
-
-.info__location {
-  margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .info__location {
     margin-top: 0.625rem;
     width: 15.5vw;
+    margin-bottom: 1.5rem;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .info__location {
     width: 12vw;
+    margin-bottom: 1.5rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
   }
 }
 
@@ -730,19 +784,21 @@ table {
   color: #fafafa;
   border-radius: 4px;
   border: none;
-  font-family: "AvenirDemi";
   margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .info__button {
     width: 10rem;
+    height: 3rem;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .info__button {
     width: 10rem;
+    margin-left: 5rem;
+    height: 3rem;
   }
 }
 
@@ -754,6 +810,12 @@ label {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
+  label {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
   label {
     display: none;
   }
@@ -820,5 +882,72 @@ iframe {
     width: 60%;
     height: 10rem;
   }
+}
+
+@media only screen and (min-width: 1440px) {
+  iframe {
+    width: 60%;
+    height: 10rem;
+  }
+}
+
+.row__appear {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .row__appear {
+    color: lightgray;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .row__appear {
+    color: lightgray;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.row__appear-location {
+  width: 30%;
+}
+
+@media only screen and (min-width: 1440px) {
+  .row__appear-location {
+    height: 25%;
+  }
+}
+
+.row__appear-date {
+  width: 30%;
+}
+
+@media only screen and (min-width: 1440px) {
+  .row__appear-date {
+    width: 21.5%;
+  }
+}
+
+.row__appear-venue {
+  width: 30%;
+}
+
+@media only screen and (min-width: 1440px) {
+  .row__appear-venue {
+    width: 27.4%;
+  }
+}
+
+.ticket__section-header {
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=shows.css.map */
