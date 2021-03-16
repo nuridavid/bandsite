@@ -20,7 +20,7 @@ axios
         return b.timestamp - a.timestamp;
       })
       .map((comment) => {
-        let timestamp = moment(comment.timestamp).format("MMMM Do YYYY");
+        let timestamp = moment(comment.timestamp).format("L");
         console.log(timestamp);
         return `<div class="commentLi">
         
@@ -63,7 +63,7 @@ form.addEventListener("submit", (event) => {
           return b.timestamp - a.timestamp;
         })
         .map((comment) => {
-          let timestamp = moment(comment.timestamp).format("MMMM Do YYYY");
+          let timestamp = moment(comment.timestamp).format("L");
           return `<div class="commentLi">
     <div class="pic__box">
     <div class="pic"></div>

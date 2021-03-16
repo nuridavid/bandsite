@@ -90,7 +90,6 @@ li {
   height: 11.438rem;
   margin-top: 5rem;
   display: flex;
-  width: 100%;
 
   align-items: center;
   padding-left: 1rem;
@@ -277,16 +276,23 @@ figure {
 }
 #form__section {
   padding: 2rem 1rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
 
+  align-items: center;
   h1 {
     color: black;
+  }
+  @include tablet {
+    padding: 2rem 11.25rem;
   }
 }
 #form {
   background-color: white;
-  width: 100%;
+
   color: #323232;
   display: flex;
+
   flex-direction: column;
   justify-content: space-between;
 
@@ -306,6 +312,15 @@ figure {
   border: none;
   border-radius: 5px;
   margin-bottom: 1rem;
+
+  @include tablet {
+    width: 10rem;
+    margin-left: 300px;
+  }
+  @include desktop {
+    width: 10rem;
+    margin-left: 300px;
+  }
 }
 
 .top__comment {
@@ -320,9 +335,16 @@ figure {
 .commentLi {
   display: flex;
   color: black;
-  width: 100%;
+  padding: 0.5rem;
   padding: 1.5rem 0;
   border-top: black 1px solid;
+
+  @include tablet {
+    width: 528px;
+  }
+  @include desktop {
+    width: 528px;
+  }
 }
 
 .pic {
@@ -347,16 +369,35 @@ figure {
   box-sizing: border-box;
   resize: none;
   height: 7rem;
+
+  @include tablet {
+    width: 460px;
+    height: 96px;
+  }
+  @include desktop {
+    width: 460px;
+    height: 96px;
+  }
 }
 label {
   margin-top: 1rem;
+  color: lightgray;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
 #form__name {
   width: 224px;
   padding: 1rem;
-
   border-radius: 5px;
+  @include tablet {
+    width: 460px;
+    height: 3rem;
+  }
+  @include desktop {
+    width: 460px;
+    height: 3rem;
+  }
 }
 
 .comment__date {
@@ -385,6 +426,37 @@ input {
 
 #form__top {
   display: flex;
-  margin-top: 2rem;
-  background-color: black;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#pic {
+  background-image: url("/sprint-two-two/assets/Images/project-pic.png");
+  background-size: cover;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+
+  &__box {
+    margin-right: 1rem;
+    margin-top: 3rem;
+  }
+}
+
+#form__aligner {
+  width: 100%;
+  height: 100%;
+}
+.top__form-section {
+  padding: 2rem 0rem 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  color: #323232;
+
+  @include tablet {
+    padding-left: 2rem;
+  }
+  @include desktop {
+    padding-left: 11.25rem;
+  }
 }

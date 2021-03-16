@@ -559,7 +559,6 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -825,15 +824,30 @@ figure {
 
 #form__section {
   padding: 2rem 1rem 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #form__section h1 {
   color: black;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  #form__section {
+    padding: 2rem 11.25rem;
+  }
+}
+
 #form {
   background-color: white;
-  width: 100%;
   color: #323232;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -872,6 +886,20 @@ figure {
   margin-bottom: 1rem;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .sub-btn {
+    width: 10rem;
+    margin-left: 300px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .sub-btn {
+    width: 10rem;
+    margin-left: 300px;
+  }
+}
+
 .top__comment {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -892,9 +920,21 @@ figure {
   display: -ms-flexbox;
   display: flex;
   color: black;
-  width: 100%;
+  padding: 0.5rem;
   padding: 1.5rem 0;
   border-top: black 1px solid;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .commentLi {
+    width: 528px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .commentLi {
+    width: 528px;
+  }
 }
 
 .pic {
@@ -927,14 +967,45 @@ figure {
   height: 7rem;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  #form__comment {
+    width: 460px;
+    height: 96px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #form__comment {
+    width: 460px;
+    height: 96px;
+  }
+}
+
 label {
   margin-top: 1rem;
+  color: lightgray;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
 #form__name {
   width: 224px;
   padding: 1rem;
   border-radius: 5px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  #form__name {
+    width: 460px;
+    height: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #form__name {
+    width: 460px;
+    height: 3rem;
+  }
 }
 
 .comment__date {
@@ -970,7 +1041,54 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2rem;
-  background-color: black;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#pic {
+  background-image: url("/sprint-two-two/assets/Images/project-pic.png");
+  background-size: cover;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+#pic__box {
+  margin-right: 1rem;
+  margin-top: 3rem;
+}
+
+#form__aligner {
+  width: 100%;
+  height: 100%;
+}
+
+.top__form-section {
+  padding: 2rem 0rem 0rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #323232;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .top__form-section {
+    padding-left: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .top__form-section {
+    padding-left: 11.25rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
